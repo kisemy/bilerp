@@ -1,0 +1,8 @@
+<tr class="nested-fields">
+<td><%= select_tag :account_type_id, options_from_collection_for_select(AccountType.all, :id, :description), include_blank: 'Select a account type'%></td>
+<td><%= f.text_field :accountno %></td>
+  <td><%= f.text_field :description %></td>
+  <td><%= f.number_field :amount %></td>
+  <td><%= link_to 'Remove', '#', class: 'remove_fields' %></td>
+</tr>
+

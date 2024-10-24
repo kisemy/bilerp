@@ -1,0 +1,14 @@
+<br><br>
+
+
+
+<div class="payment p-5">
+
+  <% if @payment %>
+    <%= render partial: 'paymenttemp', locals: {payment: @payment} %>
+  <% else %>
+    <h4>payment does not exist!</h4>
+  <% end %>
+
+
+</div>

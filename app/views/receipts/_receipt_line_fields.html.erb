@@ -1,0 +1,10 @@
+<!-- app/views/receipts/_receipt_line_fields.html.erb -->
+<tr class="receipt-line">
+  <td><%= f.text_field :account_type %></td>
+  <td><%= f.text_field :account_no %></td>
+  <td><%= f.text_field :account_name %></td>
+  <td><%= f.text_field :amount %></td>
+  <td><%= f.text_field :invoiceno %></td>
+  <td><%= link_to 'Remove', '#', class: 'remove-receipt-line btn btn-danger' %></td>
+</tr>
+

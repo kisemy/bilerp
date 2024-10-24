@@ -1,0 +1,14 @@
+
+$("#table-body").append(`
+  <tr id="input-group">
+           <td>
+         <%= form.select :account_type, options_for_select([['Customer', 'Customer'], ['Vendor', 'Vendor'], ['Bank', 'Bank'], ['Fixed Asset', 'FixedAsset']]), { prompt: 'Select Account Type' }, { id: 'account_type_select' } %>  
+        </td>
+         <td><input type="text" name="payment[paymentlines_attributes][][accountno]" required></td>
+            <td><input type="text" name="payment[paymentlines_attributes][][description]" required></td>
+            <td><input type="text" name="payment[paymentlines_attributes][][amount]" required></td>
+           </tr>
+
+
+`)
+

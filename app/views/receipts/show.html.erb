@@ -1,0 +1,13 @@
+<br><br>
+
+
+<div class="receipt p-5">
+
+  <% if @receipt %>
+    <%= render partial: 'show_receipt', locals: {receipt: @receipt} %>
+  <% else %>
+    <h4>Receipt does not exist!</h4>
+  <% end %>
+
+
+</div>
